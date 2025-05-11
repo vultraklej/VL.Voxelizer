@@ -1,0 +1,39 @@
+shader VoxelizerBase: ComputeShaderBase, VoxelStruct, TriangleStruct
+{
+    float3 Start; 
+    float3 End;
+    int3 Size;
+    float Unit;
+
+    RWStructuredBuffer<Voxel> Voxels;
+
+    int GetVoxelIndex(int x, int y, int z)
+    {
+        return z * Size.x * Size.y + y * Size.x + x;
+    }
+
+    float3 GetVoxelPosition(int x, int y, int z)
+    {
+        return Start + (float3(x, y, z) + 0.5) * Unit;
+    }
+
+    Triangle GetTriangle(StructuredBuffer<float3> positions, StructuredBuffer<int> indices, uint startIndex)
+    {
+        uint i0 = indices[startIndex + 0];
+        uint i1 = indices[startIndex + 1];
+        uint i2 = indices[startIndex + 2];
+
+        float3 v0 = positions[i0];
+        float3 v1 = positions[i1];
+        float3 v2 = positions[i2];
+
+        Triangle tri;
+        tri.A = v0;
+        tri.B = v1;
+        tri.C = v2;
+        tri.Normal = normalize(cross(v1 - v0, v2 - v0));
+        tri.Front = dot(tri.Normal, float3(0, 0, 1)) < 0;
+
+        return tri;
+    }
+};

@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\VVVV\\me\\VLTRA.Voxelizer\\EditShaders\\EditShaders.csproj": {}
+  },
+  "projects": {
+    "D:\\VVVV\\me\\VLTRA.Voxelizer\\EditShaders\\EditShaders.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\VVVV\\me\\VLTRA.Voxelizer\\EditShaders\\EditShaders.csproj",
+        "projectName": "EditShaders",
+        "projectPath": "D:\\VVVV\\me\\VLTRA.Voxelizer\\EditShaders\\EditShaders.csproj",
+        "packagesPath": "C:\\Users\\apats\\.nuget\\packages\\",
+        "outputPath": "D:\\VVVV\\me\\VLTRA.Voxelizer\\EditShaders\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\VVVV\\me\\VLTRA.Voxelizer\\EditShaders\\NuGet.Config",
+          "C:\\Users\\apats\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {},
+          "https://teamcity.vvvv.org/guestAuth/app/nuget/v1/FeedService.svc/": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "VL.Stride.Runtime": {
+              "target": "Package",
+              "version": "[2024.6.7-0308-g293be43e1a, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

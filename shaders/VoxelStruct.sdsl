@@ -1,0 +1,25 @@
+shader VoxelStruct
+{
+    struct Voxel
+    {
+        float3 Position;
+        float2 TexCoord;
+        bool Fill;
+        bool Front;
+    };
+
+    bool IsFrontVoxel(Voxel v)
+    {
+        return v.Front && v.Fill;
+    }
+
+    bool IsBackVoxel(Voxel v)
+    {
+        return !v.Front && v.Fill;
+    }
+
+    bool IsEmptyVoxel(Voxel v)
+    {
+        return !v.Fill;
+    }
+};

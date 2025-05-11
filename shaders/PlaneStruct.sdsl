@@ -1,0 +1,8 @@
+shader PlaneStruct 
+{
+    struct Plane 
+    {
+        float3 Normal;
+        float Distance;
+    };
+};
