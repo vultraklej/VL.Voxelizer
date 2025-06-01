@@ -41,7 +41,6 @@ shader VoxelStruct
     }
 
     bool IsEmptyVoxel(VoxelPos3Tex2 v)
-ol IsEmptyVoxel(Voxel v)
     {
         return !v.Fill;
     }
