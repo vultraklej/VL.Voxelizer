@@ -1,0 +1,67 @@
+shader VoxelizerVolumePos3Tex2_ComputeFX: VoxelizerBase
+{
+    RWStructuredBuffer<VoxelPos3Tex2> Voxels;
+    
+    override void Compute()
+    {
+        uint x = streams.DispatchThreadId.x;
+        uint y = streams.DispatchThreadId.y;
+
+        for (int z = 0; z < Size.z; z++)
+        {
+            VoxelPos3Tex2 voxel = Voxels[GetVoxelIndex(x, y, z)];
+
+            if (!voxel.Fill) continue;
+
+            int ifront = z;
+
+            float2 uv = voxel.TexCoord;
+            while (ifront < Size.z)
+            {
+                int vid = GetVoxelIndex(x, y, ifront);
+                if (!IsFrontVoxel(Voxels[vid]))
+                    break;
+
+                ifront++;
+                uv = Voxels[vid].TexCoord;
+            }
+
+            if (ifront >= Size.z) return;
+
+            int iback = ifront;
+
+            // Step forward to empty
+            while (iback < Size.z && IsEmptyVoxel(Voxels[GetVoxelIndex(x, y, iback)])) 
+            {
+                iback++;
+            }
+
+            if (iback >= Size.z)
+                return;
+
+            // Check if iback is back voxel
+            if (IsBackVoxel(Voxels[GetVoxelIndex(x, y, iback)]))
+            {
+                // Step forward to back face
+                while (iback < Size.z && IsBackVoxel(Voxels[GetVoxelIndex(x, y, iback)])) 
+                {
+                    iback++;
+                 }
+            }
+
+            // Fill from ifront to iback
+            for (int z2 = ifront; z2 < iback; z2++)
+            {
+                VoxelPos3Tex2 v;
+                v.Position = GetVoxelPosition(x, y, z2);
+                v.TexCoord = uv;
+                v.Fill = true;
+                v.Front = false;
+
+                Voxels[GetVoxelIndex(x, y, z2)] = v;
+            }
+
+            z = iback;
+        }
+    }
+};

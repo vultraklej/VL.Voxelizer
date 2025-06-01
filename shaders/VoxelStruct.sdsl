@@ -1,6 +1,13 @@
 shader VoxelStruct
-{
-    struct Voxel
+{     
+    struct VoxelPos3
+    {
+        float3 Position;
+        bool Fill;
+        bool Front;
+    };
+
+    struct VoxelPos3Tex2
     {
         float3 Position;
         float2 TexCoord;
@@ -8,17 +15,33 @@ shader VoxelStruct
         bool Front;
     };
 
-    bool IsFrontVoxel(Voxel v)
+    bool IsFrontVoxel(VoxelPos3 v)
     {
         return v.Front && v.Fill;
     }
 
-    bool IsBackVoxel(Voxel v)
+    bool IsBackVoxel(VoxelPos3 v)
     {
         return !v.Front && v.Fill;
     }
 
-    bool IsEmptyVoxel(Voxel v)
+    bool IsEmptyVoxel(VoxelPos3 v)
+    {
+        return !v.Fill;
+    }
+
+    bool IsFrontVoxel(VoxelPos3Tex2 v)
+    {
+        return v.Front && v.Fill;
+    }
+
+    bool IsBackVoxel(VoxelPos3Tex2 v)
+    {
+        return !v.Front && v.Fill;
+    }
+
+    bool IsEmptyVoxel(VoxelPos3Tex2 v)
+ol IsEmptyVoxel(Voxel v)
     {
         return !v.Fill;
     }

@@ -5,8 +5,6 @@ shader VoxelizerBase: ComputeShaderBase, VoxelStruct, TriangleStruct
     int3 Size;
     float Unit;
 
-    RWStructuredBuffer<Voxel> Voxels;
-
     int GetVoxelIndex(int x, int y, int z)
     {
         return z * Size.x * Size.y + y * Size.x + x;
