@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B3M9iYtUuJrMajqOl1xQJr" LanguageVersion="2025.7.0-0357-gd997588cb6" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="Mb3QJP5EI28PnZn7TFDvQz" LanguageVersion="2025.7.0-0357-gd997588cb6" Version="0.128">
   <NugetDependency Id="PyTZVATZZoJPpb0GUys93x" Location="VL.CoreLib" Version="2025.7.0-0357-gd997588cb6" />
   <Patch Id="LxfyR317fMSNJ6i2KtkuU1">
     <Canvas Id="ROaY5TOdp04LHm10d4PqWj" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -876,7 +876,7 @@
             </p:NodeReference>
             <Pin Id="A8ZrqSiNtAXPjBUS0L3YX8" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="LXz9JLchtvZOvIxcR8gjvD" Name="Color" Kind="InputPin" />
-            <Pin Id="KcFOmiBqSxfPZ6GyWGSiiK" Name="Intensity" Kind="InputPin" DefaultValue="0.05" />
+            <Pin Id="KcFOmiBqSxfPZ6GyWGSiiK" Name="Intensity" Kind="InputPin" DefaultValue="0.1" />
             <Pin Id="EePD1QBixf8NporDvkQhAK" Name="Component" Kind="InputPin" />
             <Pin Id="EBdWiLV4ts3PUxNwK3cnLV" Name="Name" Kind="InputPin" />
             <Pin Id="MlPRmhMAKvdLLJnl2tTXVN" Name="Enabled" Kind="InputPin" />
@@ -954,40 +954,6 @@
             <Pin Id="KHiYYFy3K7IMtVpP6mI8hC" Name="Number Of Texture Coordinates" Kind="InputPin" />
             <Pin Id="KaPZlGN20JoMbtxJSl0Mw5" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="BOf1JwECmkHQDoGwFVELeK" Comment="Path" Bounds="1569,-148,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\Installs\vvvv_gamma_7.0-0357-gd997588cb6-win-x64\packs\VL.Stride\help\Assets\cartesian.png">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="1567,-110,105,19" Id="NIm4cRvjpQTMqVLgLstUUP">
-            <p:NodeReference LastCategoryFullName="Stride.Assets" LastDependency="VL.Stride.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="FileTexture" />
-            </p:NodeReference>
-            <Pin Id="IOqavcvwTV2QPEgIbUyw7a" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="AxkXLTh4N9YOYbQDsqkz8F" Name="Path" Kind="InputPin" />
-            <Pin Id="RaK5PO2M2xXOhiUXkseMmQ" Name="Generate Mipmaps" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="EaivFR6Pg51NThV3jz99oN" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NY4iZ9J2ETcMntublXOCCR" Name="Premultiply Alpha" Kind="InputPin" DefaultValue="True" />
-            <Pin Id="TE6hry6VtfbOxOKgnaDKxX" Name="Compress" Kind="InputPin" />
-            <Pin Id="So9jOgwexrPL1mVFSCEOUK" Name="Alpha Format" Kind="InputPin" />
-            <Pin Id="J9x9pxqmk4RM51a8x5HoFF" Name="Reload" Kind="InputPin" />
-            <Pin Id="KyIZGrJ69IIQLzffzR6rNH" Name="Texture" Kind="OutputPin" />
-            <Pin Id="NK5qWQL1cFbLKdtb3mVb5Q" Name="Is Loading" Kind="OutputPin" />
-            <Pin Id="SmgRlyLEVs6NyUGSkp1Cif" Name="Already Loaded" Kind="OutputPin" />
-            <Pin Id="VEA8Q1Jv3UfPPBXs09GzsH" Name="Url" Kind="OutputPin" IsHidden="true" />
-          </Node>
-          <Node Bounds="1567,-80,60,19" Id="QZCTbyYeZJtP3O6xpgRLkE">
-            <p:NodeReference LastCategoryFullName="Fuse.Texture" LastDependency="VL.Fuse.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="TextureIn (Fuse)" />
-            </p:NodeReference>
-            <Pin Id="Vx1FLxXh4HzQbHYOUaMGQQ" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="UmBLLuIApGyP5tfgQ8yh08" Name="Texture" Kind="InputPin" />
-            <Pin Id="C0ekdIhpfHTLE0o7TTLFTV" Name="State Output" Kind="OutputPin" IsHidden="true" />
-            <Pin Id="E9wOerLIq10QaxJahoZp1z" Name="Output" Kind="OutputPin" />
-            <Pin Id="UTYAkSAfHvCO6GtYycSjDB" Name="RW" Kind="InputPin" IsHidden="true" />
-          </Node>
           <Node Bounds="1567,10,97,19" Id="J73pA2SgaQjPxr0gjFMnFA">
             <p:NodeReference LastCategoryFullName="Fuse.Texture" LastDependency="VL.Fuse.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -999,7 +965,7 @@
             <Pin Id="N8gK5XO6qhtQDUz6RWSSRu" Name="Interpolation" Kind="InputPin" />
             <Pin Id="UBqIZXh0CSWPs4BhOhr2qh" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="1613,-50,61,19" Id="L80AGJhiW4EOmgHf8wnLjE">
+          <Node Bounds="1613,-30,61,19" Id="L80AGJhiW4EOmgHf8wnLjE">
             <p:NodeReference LastCategoryFullName="Fuse.Variables" LastDependency="VL.Fuse.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TexCoord" />
@@ -1010,18 +976,13 @@
           </Node>
           <Pad Id="AAgWFWE03JgOCg48VevfM9" SlotId="VlbhZXpowmrPQJIU6vOmK4" Bounds="250,110" />
           <Pad Id="RgameEU32gkQIQmbzXINgE" SlotId="VlbhZXpowmrPQJIU6vOmK4" Bounds="331,920" />
-          <Pad Id="L6487kSo2FaM8RqXurXObY" Comment="Path" Bounds="1174,-148,140,15" ShowValueBox="true" isIOBox="true" Value="..\..\..\Installs\vvvv_gamma_7.0-0357-gd997588cb6-win-x64\packs\VL.Stride\help\Assets\cartesian.png">
-            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Path" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="1172,-110,105,19" Id="Q14sZLZZJKQM5F1jo4J5ev">
+          <Node Bounds="1384,-210,105,19" Id="Q14sZLZZJKQM5F1jo4J5ev">
             <p:NodeReference LastCategoryFullName="Stride.Assets" LastDependency="VL.Stride.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="FileTexture" />
             </p:NodeReference>
             <Pin Id="KtkSHO2HsOPLhxSq1PGVfi" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="Cbfjk25jxumNybtzWpQ1ca" Name="Path" Kind="InputPin" />
+            <Pin Id="Cbfjk25jxumNybtzWpQ1ca" Name="Path" Kind="InputPin" DefaultValue="D:\VVVV\Installs\vvvv_gamma_7.0-0357-gd997588cb6-win-x64\packs\VL.Stride\help\Assets\cartesian.png" />
             <Pin Id="HJHOKjuHkk3O0iJh6esC3s" Name="Generate Mipmaps" Kind="InputPin" DefaultValue="True" />
             <Pin Id="Eljc3JHb4uLQWwgXhXmlr5" Name="Is sRGB" Kind="InputPin" IsHidden="true" />
             <Pin Id="GN4IBjsNlOVOAMUaFrXwln" Name="Premultiply Alpha" Kind="InputPin" DefaultValue="True" />
@@ -1033,7 +994,7 @@
             <Pin Id="U6HokJJNuKWLwfFSlHt8R7" Name="Already Loaded" Kind="OutputPin" />
             <Pin Id="EQKMO79UYO7LGcXLWdfWHx" Name="Url" Kind="OutputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="1172,-80,60,19" Id="Q3yGo9AuCJcL36m0dpKFbz">
+          <Node Bounds="1384,-150,60,19" Id="Q3yGo9AuCJcL36m0dpKFbz">
             <p:NodeReference LastCategoryFullName="Fuse.Texture" LastDependency="VL.Fuse.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="TextureIn (Fuse)" />
@@ -1087,6 +1048,11 @@
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="CmCystsQzT8OJQ3inSPS5o" Comment="Path" Bounds="1386,-240,140,15" ShowValueBox="true" isIOBox="true" Value="..\assets\textures\checker.png">
+            <p:TypeAnnotation LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Path" />
+            </p:TypeAnnotation>
           </Pad>
         </Canvas>
         <Patch Id="Fe2olVjJnuDNDeWeqOS8B9" Name="Create" />
@@ -1190,22 +1156,20 @@
         <Link Id="CWCJ80XUx8uOy3GzgcbrnT" Ids="OgTCZYpyMHiOso0B2oNQK4,EsIvQZUQkv6M050aqtiw9B" />
         <Link Id="MTvxwtiecLdNXDo2eSLfHU" Ids="KaPZlGN20JoMbtxJSl0Mw5,ICh60DFLlVENwVEECBUZWE" />
         <Link Id="SkBdBhfZWApMhr3obroisw" Ids="KaPZlGN20JoMbtxJSl0Mw5,SQVicNH9F22OzTynmpesmQ" />
-        <Link Id="KUsvALMYF6POur82soHbDf" Ids="BOf1JwECmkHQDoGwFVELeK,AxkXLTh4N9YOYbQDsqkz8F" />
-        <Link Id="HwvTRFa0pzoLfCgyTQG36q" Ids="KyIZGrJ69IIQLzffzR6rNH,UmBLLuIApGyP5tfgQ8yh08" />
-        <Link Id="CmmhCxmEFU7MHz7s9o7NMu" Ids="E9wOerLIq10QaxJahoZp1z,CpZawTIBt7vLnBuXyquo53" />
         <Link Id="Pb1DbWDdYVDM7VTLOsjkPm" Ids="UZ6rSrX1uuEOg3tVhdaCM5,GBU2I7GHI7YN6nIThDwBAi" />
         <Link Id="HTBhL5v3dOSMdoQdqSexWb" Ids="UR4DJlaRDdDLiMUL1lXlBy,BLAzrTNytixMJmJAKIItlt" />
         <Link Id="HZfIh9VWhe7POZc2lgJ8pP" Ids="UBqIZXh0CSWPs4BhOhr2qh,CpdjJTJs9PkQKFL9m2p22K" />
         <Slot Id="VlbhZXpowmrPQJIU6vOmK4" Name="Mesh TexCoords" />
         <Link Id="IFrw5NdgWrWQIV7k2861x1" Ids="AP7OYCoIx32PBiRY9p6R4V,AAgWFWE03JgOCg48VevfM9" />
         <Link Id="DBNYGSyUIirNwPzlI6LaLE" Ids="RgameEU32gkQIQmbzXINgE,BaIP5rYinopQCCEm5U6n2y" />
-        <Link Id="TOc6AN9AWgCN42KsmiBNCt" Ids="L6487kSo2FaM8RqXurXObY,Cbfjk25jxumNybtzWpQ1ca" />
         <Link Id="GotZ0KyRrLbOmRktlOTPH8" Ids="EUmqgJCXLYGPqAe8vvXsPS,AF6tY8636KMNd6mHZT6bWf" />
         <Link Id="AQF8SKQ0Om5OX5MD3qGyyZ" Ids="M9ONVLI91nFQSNFDpcAcqg,S70EzE2rJL3LZuAUnz4l1Y" />
         <Link Id="IwG3F254BvPMghuQJH8xy6" Ids="RJ2yJOzzCVPLDtQ4wOjWMS,TkQ3QclH5eOQZl5tZBLWKr" />
         <Link Id="QleNOtndtG5MN4CL30KZGv" Ids="JbPh4RaV2lbPmF3XgwsD9S,KnYStZ7IOSpPPhgISFIfBd" />
         <Link Id="I8j33sYqgUBLDFtjj2cPUa" Ids="DLEAezDMFRoPZ06RXOOvvW,U1NGghQyw2qQA502iBYjdX" />
         <Link Id="VieG9jKwnwQQX5MejsWQJL" Ids="N7TOtBRbfrQPw5Ut4jSx4z,AbVK8FXbGuaL3utXEjtnRq" />
+        <Link Id="HNfikm3YPIwOcZXwcy8VmO" Ids="M9ONVLI91nFQSNFDpcAcqg,CpZawTIBt7vLnBuXyquo53" />
+        <Link Id="MlAeAjiM699P4b0BItkkSj" Ids="CmCystsQzT8OJQ3inSPS5o,Cbfjk25jxumNybtzWpQ1ca" />
       </Patch>
     </Node>
   </Patch>
