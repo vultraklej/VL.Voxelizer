@@ -1,0 +1,10 @@
+# .v4p backup files
+*~.xml
+
+# Dynamic plugins .dll
+bin/
+obj/
+.vs/
+packages/
+
+/.vl/*
