@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="B3M9iYtUuJrMajqOl1xQJr" LanguageVersion="2025.7.0-0357-gd997588cb6" Version="0.128">
-  <NugetDependency Id="PyTZVATZZoJPpb0GUys93x" Location="VL.CoreLib" Version="2025.7.0-0357-gd997588cb6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="B3M9iYtUuJrMajqOl1xQJr" LanguageVersion="2025.7.0-0416-gd480974924" Version="0.128">
+  <NugetDependency Id="PyTZVATZZoJPpb0GUys93x" Location="VL.CoreLib" Version="2025.7.0-0416-gd480974924" />
   <Patch Id="LxfyR317fMSNJ6i2KtkuU1">
     <Canvas Id="ROaY5TOdp04LHm10d4PqWj" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -1051,7 +1051,7 @@
     </Node>
   </Patch>
   <NugetDependency Id="BzF4SwtxNypLlfQEFr2bJ2" Location="VL.Fuse" Version="1.0.3-beta06" />
-  <NugetDependency Id="E4NDbAeawJFPX1Htu680VH" Location="VL.Stride" Version="2025.7.0-0357-gd997588cb6" />
-  <NugetDependency Id="N80J9UC1G7pLuH0pYDK7Nk" Location="VL.Stride.Runtime" Version="2025.7.0-0357-gd997588cb6" />
-  <DocumentDependency Id="O6kzqPStPJKOPFOoVXIqWi" Location="../VLTRA.Voxelizer.vl" />
+  <NugetDependency Id="E4NDbAeawJFPX1Htu680VH" Location="VL.Stride" Version="2025.7.0-0416-gd480974924" />
+  <NugetDependency Id="N80J9UC1G7pLuH0pYDK7Nk" Location="VL.Stride.Runtime" Version="2025.7.0-0416-gd480974924" />
+  <DocumentDependency Id="O6FaJ0SOWGQQbRzfSRxnIw" Location="../VL.Voxelizer.vl" />
 </Document>

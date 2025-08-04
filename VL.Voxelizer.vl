@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="MjEFyUrmm8gNWRjJ4iQYew" LanguageVersion="2025.7.0-0357-gd997588cb6" Version="0.128">
-  <NugetDependency Id="QLxJKbBdz4pLrJwAS91sTV" Location="VL.CoreLib" Version="2025.7.0-0357-gd997588cb6" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="MjEFyUrmm8gNWRjJ4iQYew" LanguageVersion="2025.7.0-0416-gd480974924" Version="0.128">
+  <NugetDependency Id="QLxJKbBdz4pLrJwAS91sTV" Location="VL.CoreLib" Version="2025.7.0-0416-gd480974924" />
   <Patch Id="APMXabyWOY0MkUsce8w4Yl">
-    <Canvas Id="S9I21KFqg02MDEdlT2VEVO" DefaultCategory="VLTRA.Voxelizer" CanvasType="FullCategory">
+    <Canvas Id="S9I21KFqg02MDEdlT2VEVO" DefaultCategory="VL.Voxelizer" CanvasType="FullCategory">
       <Canvas Id="HXi0BUIAbjmPtQvBb4D9Tf" Name="Attributes" Position="69,90">
         <!--
 
@@ -1081,8 +1081,8 @@
             <Pad Id="ORIVKUNlSoqO2g5i0z4a19" SlotId="PFr7Vl5ehQmMuoDEROX5ep" Bounds="176,431" />
             <Pad Id="LOeyy9sQk4AQYnwvVcqr71" SlotId="PFr7Vl5ehQmMuoDEROX5ep" Bounds="1209,160" />
             <ControlPoint Id="NG5WRJnCIwIQUX4qHCGmqd" Bounds="176,460" />
-            <Pad Id="Vhw0d8kue2yOwx1CUJoDyQ" SlotId="PFr7Vl5ehQmMuoDEROX5ep" Bounds="809,750" />
-            <Node Bounds="807,780,57,19" Id="QGWNBF2Z1XlPIMwGTrYSSR">
+            <Pad Id="Vhw0d8kue2yOwx1CUJoDyQ" SlotId="PFr7Vl5ehQmMuoDEROX5ep" Bounds="808,750" />
+            <Node Bounds="806,780,57,19" Id="QGWNBF2Z1XlPIMwGTrYSSR">
               <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="Changed" />
@@ -3301,6 +3301,5 @@
     </Node>
   </Patch>
   <NugetDependency Id="UCqHuQGqFyMNLa7YNNaUII" Location="VL.Fuse" Version="1.0.3-beta06" />
-  <NugetDependency Id="D8nYjhAbNaGQF3KlbtGYn8" Location="VL.Stride.Runtime" Version="2025.7.0-0357-gd997588cb6" />
-  <ProjectDependency Id="FzDxSXZthzcMuU35u9T2Wr" Location="./csharp/Voxelizer/Voxelizer.csproj" />
+  <NugetDependency Id="D8nYjhAbNaGQF3KlbtGYn8" Location="VL.Stride.Runtime" Version="2025.7.0-0416-gd480974924" />
 </Document>
