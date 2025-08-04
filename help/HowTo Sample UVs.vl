@@ -252,29 +252,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="501,790,57,19" Id="S5cZiHEIh4bNGPLdGx4dr1">
-            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="Changed" />
-            </p:NodeReference>
-            <Pin Id="IMhJc32aPLtOWxfn8NKmNx" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="UQzyHFu1zI7PDzGrDg0HRG" Name="Changed On Create" Kind="InputPin" IsHidden="true" />
-            <Pin Id="NOmRZO5otFQPiaSiBJA8A7" Name="Value" Kind="InputPin" />
-            <Pin Id="HWrX0Gh32NtOzPSDYubHyu" Name="Result" Kind="OutputPin" />
-            <Pin Id="RuaGafhOsFaPR5Rs3tISba" Name="Unchanged" Kind="OutputPin" />
-          </Node>
-          <Pad Id="Htk5o0lbJLAM9C5UBGtKyn" SlotId="UHZbQZDcRaKQaYocjkyyHZ" Bounds="503,770" />
-          <Node Bounds="501,830,69,19" Id="K7hmKjdLOvTPCMEIihUy5j">
-            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="FrameDelay" />
-            </p:NodeReference>
-            <Pin Id="GhMgHI1NkdDLnU2XCi3CWs" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="LECK7i0NMwaLijctom7RVu" Name="Initial Value" Kind="InputPin" IsHidden="true" />
-            <Pin Id="BVdSzJS9TuCLIY0URaldKx" Name="Value" Kind="InputPin" />
-            <Pin Id="TQNwaGUvJffQcFJ2xXFbs1" Name="Value" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="501,880,205,19" Id="OBdTWB9knp1Lj9dsXl3TFb">
+          <Node Bounds="508,870,81,19" Id="OBdTWB9knp1Lj9dsXl3TFb">
             <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
@@ -283,9 +261,8 @@
             <Pin Id="FtNripnfKHTLVPMBlzKhUJ" Name="Input" Kind="StateInputPin" />
             <Pin Id="U6oBiqSV1RdN7uFCh8zAVA" Name="Input 2" Kind="InputPin" />
             <Pin Id="Ay5y05mHzOPOAsOkXLkHrS" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="AbVK8FXbGuaL3utXEjtnRq" Name="Input 3" Kind="InputPin" />
           </Node>
-          <Pad Id="Hah5xmcRgCVMoBCu7BNvmB" Comment="" Bounds="603,840,35,35" ShowValueBox="true" isIOBox="true" Value="false">
+          <Pad Id="Hah5xmcRgCVMoBCu7BNvmB" Comment="" Bounds="510,820,35,35" ShowValueBox="true" isIOBox="true" Value="false">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -982,7 +959,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="N7TOtBRbfrQPw5Ut4jSx4z" Comment="" Bounds="703,840,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="N7TOtBRbfrQPw5Ut4jSx4z" Comment="" Bounds="586,821,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -990,7 +967,7 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Toggle</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="NA0p8PUVAQsOnYYVBYOyte" Bounds="743,862,215,58" ShowValueBox="true" isIOBox="true" Value="&lt; constant update may introduce noticeable UVs jittering (depending on the source model)">
+          <Pad Id="NA0p8PUVAQsOnYYVBYOyte" Bounds="633,819,215,58" ShowValueBox="true" isIOBox="true" Value="&lt; constant update may introduce noticeable UVs jittering (depending on the source model)">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -1016,7 +993,7 @@
             <Pin Id="R7jYIVtqOEwNMrV8UvT44n" Name="Enabled" Kind="InputPin" />
             <Pin Id="GmAPFcxFnOkLSHiRLEaztC" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="532,980,68,19" Id="OSZhjzgsRnKNVpAwGiXc65">
+          <Node Bounds="531,980,68,19" Id="OSZhjzgsRnKNVpAwGiXc65">
             <p:NodeReference LastCategoryFullName="Fuse.Compute.Buffer" LastDependency="VL.Fuse.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="SelectStage" />
@@ -1027,7 +1004,7 @@
             <Pin Id="AJhR35aGZywNBLtNNPasIX" Name="Thread Group Size" Kind="InputPin" />
             <Pin Id="HtmzswiYVlZLEYHdjW9VNm" Name="Output" Kind="StateOutputPin" />
           </Node>
-          <Node Bounds="532,911,30,19" Id="RDwr4jQ5GkaP9yzTWhgfLA">
+          <Node Bounds="531,911,30,19" Id="RDwr4jQ5GkaP9yzTWhgfLA">
             <p:NodeReference LastCategoryFullName="VL.Voxelizer.Attributes" LastDependency="VL.Voxelizer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Fill (Voxel)" />
@@ -1038,7 +1015,7 @@
             <Pin Id="LJZezNgC4aNQJsiKAgaWpB" Name="Instance" Kind="InputPin" IsHidden="true" />
             <Pin Id="HkGWFV3P9sQO7eDLbGoHKG" Name="Semantic ID" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Node Bounds="532,951,28,19" Id="Is75AWfQDdELxESZkcTYhQ">
+          <Node Bounds="531,951,28,19" Id="Is75AWfQDdELxESZkcTYhQ">
             <p:NodeReference LastCategoryFullName="Fuse.Value.Conversion" LastDependency="VL.Fuse.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="Category" Name="Conversion" NeedsToBeDirectParent="true">
@@ -1064,7 +1041,7 @@
             <Pin Id="RadG9h3tvzOLvNTFFMBOCL" Name="Output" Kind="OutputPin" />
             <Pin Id="RKtVrcGdqFyMhaNHbz1IKU" Name="Has Changed" Kind="OutputPin" />
           </Node>
-          <Node Bounds="262,980,244,19" Id="Q8DbKrF6PxOPsZFwejI9Ap">
+          <Node Bounds="262,980,209,19" Id="Q8DbKrF6PxOPsZFwejI9Ap">
             <p:NodeReference LastCategoryFullName="VL.Voxelizer" LastDependency="VL.Voxelizer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="Voxelizer (Pos3Tex2)" />
@@ -1078,11 +1055,10 @@
             <Pin Id="GvA6GOdfFz9OA49hj2xIdw" Name="Volume" Kind="InputPin" />
             <Pin Id="RNcjm9LuplOQV3vqrmSnug" Name="State Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="BelVDCgMtYjOtGNQ7gctme" Name="Output" Kind="OutputPin" />
-            <Pin Id="VutMMChxerXNEn8869zmMy" Name="Reset" Kind="InputPin" />
             <Pin Id="IbqaHvzyvtrN5iOgToCqDQ" Name="Enabled" Kind="InputPin" />
             <Pin Id="ROLcpztLlR2Nczm9ezAN40" Name="IsInitialized" Kind="OutputPin" />
           </Node>
-          <Node Bounds="557,1020,73,26" Id="J98uWfMSi5jNLw2FmA0brp">
+          <Node Bounds="556,1020,73,26" Id="J98uWfMSi5jNLw2FmA0brp">
             <p:NodeReference LastCategoryFullName="Fuse.Compute.Buffer.IIndicesProvider" LastDependency="VL.Fuse.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <CategoryReference Kind="InterfaceTypeFlag" Name="IIndicesProvider" NeedsToBeDirectParent="true" />
@@ -1092,7 +1068,7 @@
             <Pin Id="EGCVhOIht2DPyO1S8tr4pQ" Name="State Output" Kind="StateOutputPin" />
             <Pin Id="SoBjSkoqrk2PzhTXzv8XQs" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Rma9oPFa1BXORGcXQLTfFr" SlotId="BdPMydKjp2tPvCGL0D6MVQ" Bounds="627,1079" />
+          <Pad Id="Rma9oPFa1BXORGcXQLTfFr" SlotId="BdPMydKjp2tPvCGL0D6MVQ" Bounds="626,1079" />
           <Pad Id="RFPADobvkoKP9vXSkYk1O7" SlotId="BdPMydKjp2tPvCGL0D6MVQ" Bounds="1299,400" />
         </Canvas>
         <Patch Id="Fe2olVjJnuDNDeWeqOS8B9" Name="Create" />
@@ -1142,10 +1118,6 @@
         <Link Id="GDPk8smrgZzObdudNY7nZy" Ids="Icz25d2dnOvL4rRvrizVHL,Ki4AopUAY00N7pQdHKmLfi" />
         <Link Id="QXDtd70fjVCPjyvp9ovcLy" Ids="Ceo0BvYxNToLP9tM9G4V8J,JEnkq22iw3nL1mQikIFrVX" />
         <Link Id="BSnmVWRex1GMSluN8A38K1" Ids="EhqCZOqibTsNZMtCPJFgfq,HHFpexmlDt4OrVGa3OUM1X" />
-        <Link Id="N6Z0NMTS4MeMdsZ9diQjoZ" Ids="Htk5o0lbJLAM9C5UBGtKyn,NOmRZO5otFQPiaSiBJA8A7" />
-        <Link Id="I6haBwcUpmTOImI7xDnmEm" Ids="HWrX0Gh32NtOzPSDYubHyu,BVdSzJS9TuCLIY0URaldKx" />
-        <Link Id="CNT4OEf2T0dNEtwyF0Xf36" Ids="TQNwaGUvJffQcFJ2xXFbs1,FtNripnfKHTLVPMBlzKhUJ" />
-        <Link Id="TMY5endhholMhnBInOyp3R" Ids="Hah5xmcRgCVMoBCu7BNvmB,U6oBiqSV1RdN7uFCh8zAVA" />
         <Slot Id="M0zQ1MSZe0cOnEWk1nqwJS" Name="Voxel Grid Bounds" />
         <Slot Id="LdEBVolVwVONMevRVvJJOh" Name="Voxel Grid Size" />
         <Link Id="DgQ7n5gOp9wOzRhDcmCwRX" Ids="GoaKgkYXCpMOC5inOV4B6N,KOuGdZ7u2dOM1hU8E1s5CF" />
@@ -1196,7 +1168,6 @@
         <Link Id="IwG3F254BvPMghuQJH8xy6" Ids="RJ2yJOzzCVPLDtQ4wOjWMS,TkQ3QclH5eOQZl5tZBLWKr" />
         <Link Id="QleNOtndtG5MN4CL30KZGv" Ids="JbPh4RaV2lbPmF3XgwsD9S,KnYStZ7IOSpPPhgISFIfBd" />
         <Link Id="I8j33sYqgUBLDFtjj2cPUa" Ids="DLEAezDMFRoPZ06RXOOvvW,U1NGghQyw2qQA502iBYjdX" />
-        <Link Id="VieG9jKwnwQQX5MejsWQJL" Ids="N7TOtBRbfrQPw5Ut4jSx4z,AbVK8FXbGuaL3utXEjtnRq" />
         <Link Id="HNfikm3YPIwOcZXwcy8VmO" Ids="M9ONVLI91nFQSNFDpcAcqg,CpZawTIBt7vLnBuXyquo53" />
         <Link Id="MlAeAjiM699P4b0BItkkSj" Ids="CmCystsQzT8OJQ3inSPS5o,Cbfjk25jxumNybtzWpQ1ca" />
         <Link Id="P8Q3hI0uvc3Mwa7fbLyI0Y" Ids="PczahS1qb9WMVz7iWuw7cT,Cg7WN6agES7LQYuipkTyyI" />
@@ -1209,14 +1180,15 @@
         <Link Id="OjLmh39lHdWMdOjEdYksvZ" Ids="MiOPdUQBXLRL9wUH6yd8EE,Jl0IEndxOwDOailMbGxrQv" />
         <Link Id="OrGY0JCjMRUOqvKPEH3Kka" Ids="PhsiuXQmztsP7XSlxkA7Ch,QsyhoW2PjhaPCGtX18xaeW" />
         <Link Id="I7lXUMiUvdDNPoWLh1qmWA" Ids="DfcszT2yFhMMdjOECmHRVW,GvA6GOdfFz9OA49hj2xIdw" />
-        <Link Id="GlToqSbP85NOzO8pbMnkby" Ids="Ay5y05mHzOPOAsOkXLkHrS,VutMMChxerXNEn8869zmMy" />
-        <Link Id="NgOVaE2LdFVPoXqSjE0z1Z" Ids="Ay5y05mHzOPOAsOkXLkHrS,IbqaHvzyvtrN5iOgToCqDQ" />
         <Link Id="TIiodyU2IGqPdhYVk1XO3b" Ids="BelVDCgMtYjOtGNQ7gctme,MT8yTePbDI4Nl4s17SPfac" />
         <Link Id="S65lHyUN4bKOKWErlO3jOD" Ids="PczahS1qb9WMVz7iWuw7cT,Dz71FxFSIgPMwFtjgFI0YD" />
         <Slot Id="BdPMydKjp2tPvCGL0D6MVQ" Name="Indices" />
         <Link Id="Fk1qwjDQ9IVPhtvkoBmyoz" Ids="SoBjSkoqrk2PzhTXzv8XQs,Rma9oPFa1BXORGcXQLTfFr" />
         <Link Id="FfQPNnIGEY5PfoyMjfxcy5" Ids="HtmzswiYVlZLEYHdjW9VNm,JPpQa53S8hdPP9ftzW2tR2" />
         <Link Id="BowfUlIQZlTOD47BUC5fJ8" Ids="RFPADobvkoKP9vXSkYk1O7,LEoHnkBneuSP5fG8SmDreO" />
+        <Link Id="MEh8i53t3hHNPv7EzEOIP7" Ids="Hah5xmcRgCVMoBCu7BNvmB,FtNripnfKHTLVPMBlzKhUJ" />
+        <Link Id="IriUNigIM28PlTeHuniYp5" Ids="N7TOtBRbfrQPw5Ut4jSx4z,U6oBiqSV1RdN7uFCh8zAVA" />
+        <Link Id="D3dne6tbLihPnFB3C3yOVk" Ids="Ay5y05mHzOPOAsOkXLkHrS,IbqaHvzyvtrN5iOgToCqDQ" />
       </Patch>
     </Node>
   </Patch>
