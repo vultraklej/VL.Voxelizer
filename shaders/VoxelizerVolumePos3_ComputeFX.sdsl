@@ -7,6 +7,8 @@ shader VoxelizerVolumePos3_ComputeFX: VoxelizerBase
         uint x = streams.DispatchThreadId.x;
         uint y = streams.DispatchThreadId.y;
 
+        if (x >= Size.x || y >= Size.y) return;
+
         for (int z = 0; z < Size.z; z++)
         {
             VoxelPos3 voxel = Voxels[GetVoxelIndex(x, y, z)];

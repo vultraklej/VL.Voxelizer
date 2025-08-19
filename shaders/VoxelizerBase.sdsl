@@ -29,7 +29,7 @@ shader VoxelizerBase: ComputeShaderBase, VoxelStruct, TriangleStruct
         tri.A = v0;
         tri.B = v1;
         tri.C = v2;
-        tri.Normal = normalize(cross(v1 - v0, v2 - v0));
+        tri.Normal = normalize(cross(v2 - v0, v1 - v0));
         tri.Front = dot(tri.Normal, float3(0, 0, 1)) < 0;
 
         return tri;

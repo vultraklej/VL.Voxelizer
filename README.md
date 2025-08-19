@@ -23,7 +23,6 @@ This project is currently under sporadic development and is not yet available as
 ### Known Issues
 
 - `TexCoords` sampling may produce jittered results between frames depending on the source model data
-- `Volume` sampling may generate voxels outside of AABB depending on the target resolution/AABB size
 
 ### Backlog
 
