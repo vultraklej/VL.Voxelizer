@@ -13,7 +13,7 @@ A **vvvv gamma** implementation of the mesh voxelization GPU algorithm originall
 - Supports `TexCoords` and `Volume` sampling (as in the original implementation)
 
 ## Tested On
-- VVVV Gamma: `7.0-0357`
+- VVVV Gamma: `7.0-0416`
 - VL.Fuse: `1.0.3-beta06`
 
 ## Current Status
@@ -29,4 +29,5 @@ This project is currently under sporadic development and is not yet available as
 - [ ] Add support for vertex color sampling
 - [ ] Merge shader into one using conditional compilation/effect permutation🤔
 - [ ] Add more examples
+- [x] Execute `IRenderer` operations as part of the `ComputeStage`
 - [ ] Replace SDSL implementation with pure `ComputeSystem`🗻
