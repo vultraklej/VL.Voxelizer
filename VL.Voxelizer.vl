@@ -1083,7 +1083,7 @@
               </p:TypeAnnotation>
             </Pin>
             <Pin Id="GZ3txsvrhQMObfWaTjwoRU" Name="Output" Kind="OutputPin" />
-            <Pin Id="BGBOgTj57aKPi5yXi5aBdD" Name="Enabled" Kind="InputPin" DefaultValue="True" Visibility="Optional">
+            <Pin Id="BGBOgTj57aKPi5yXi5aBdD" Name="Force Update" Kind="InputPin" DefaultValue="False" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -1260,7 +1260,7 @@
           <Slot Id="V5uzqfzMYtLNVPxThxfiag" Name="Output" />
           <Link Id="RuRB8mRKlNMNiqYqQ7T7DZ" Ids="NifsS1mSygMQWIr12tedOo,Gx9dFW6qMLdOcBGYB9FDUi" />
           <Link Id="C4wdv1bZgiKPMsIOKH7hVj" Ids="BGBOgTj57aKPi5yXi5aBdD,JGhkGx632p8MSYL6IeHIgN" IsHidden="true" />
-          <Slot Id="Q0sqsHkoIpWL7kKgpOfm1T" Name="Enabled" />
+          <Slot Id="Q0sqsHkoIpWL7kKgpOfm1T" Name="Force Update" />
           <Link Id="Qx0F3nZqFOuPn1HpXQcokq" Ids="JGhkGx632p8MSYL6IeHIgN,IxGzGP1If4OLSCU4QSGnfQ" />
           <Link Id="P8RPPZQD9RpOa0G78pxFbI" Ids="GGgAb6ZbPPxQcRYRvXLjVm,Qfhg1jbNRHrMsMdMUWbUUJ" IsHidden="true" />
           <Link Id="A5PsTH7NmbEL83wM82AVqk" Ids="LTamyb83hbUOoKfOK9h6sJ,GGgAb6ZbPPxQcRYRvXLjVm" />
@@ -2958,6 +2958,7 @@
                 <Choice Kind="TypeFlag" Name="Integer32" />
               </p:TypeAnnotation>
             </Pad>
+            <Pad Id="SeNkZlXSFsJOTGFgb58dBL" Comment="" Bounds="717,820,35,35" ShowValueBox="true" isIOBox="true" />
           </Canvas>
           <Patch Id="SQWgIQ6tZTPPoXuduWAKLW" Name="Create">
             <Pin Id="MsIJ2EbpUEWODHec0e833q" Name="Voxels Resource" Kind="InputPin">
@@ -2976,7 +2977,7 @@
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
             </Pin>
-            <Pin Id="LjECnCWf1bDOyvCPREUUL6" Name="Enabled" Kind="InputPin" DefaultValue="True" Visibility="Optional">
+            <Pin Id="LjECnCWf1bDOyvCPREUUL6" Name="Force Update" Kind="InputPin" DefaultValue="False" Visibility="Optional">
               <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
                 <Choice Kind="TypeFlag" Name="Boolean" />
               </p:TypeAnnotation>
@@ -3147,7 +3148,7 @@
             <Pin Id="Fio8V1R4BaEOOvmVLfsOG0" Name="Output" Kind="OutputPin" />
           </Patch>
           <Slot Id="Gvb2yXwO5h0MaBnjC6RiRP" Name="Output" />
-          <Slot Id="KiCyVHwU2brLUG9TGmqNec" Name="Enabled" />
+          <Slot Id="KiCyVHwU2brLUG9TGmqNec" Name="Force Update" />
           <Link Id="TshRgeX8ODLMfuAvy8SgF1" Ids="G9FaoaCs3gnLaes46pxx5C,CUAKE6vaN2cNT9OUGaZ6TM" />
           <Link Id="DKCvzKhlooVNNuljIhWjUj" Ids="Ff4PiU5JURWOwrg9VtCH2Q,LXkcyPUfXxfNf5KDYSNUoA" />
           <Link Id="MUSWrvwazOCMhlezietrMJ" Ids="QNJ2qCK2dKzPrCoVgkc75o,OXU9SyiVBpYPhaqPBiuMkK" />
@@ -3182,6 +3183,7 @@
           <Link Id="G11ONlNGSoMK9ylnrk1gtN" Ids="OhkGWcqmBHgPkYino6EbgW,LJxcS6pNvt5NXhSvyk7goA" />
           <Link Id="JXrotJNOcmoOTxLcUdFs6C" Ids="GeqDhovmdupQYEudXgsLb9,OI9nvaNHYiOOrCgRXvBdQL" />
           <Link Id="TkW8gC8PI2JP2XEUUXkFJ8" Ids="F7ychuCd6foPorDYdKGeYw,SVMSwwyqc13MFxqBDpjbCR" />
+          <Link Id="HWFb6EirknCNR4mavcwKj2" Ids="Ff4PiU5JURWOwrg9VtCH2Q,SeNkZlXSFsJOTGFgb58dBL" />
         </Patch>
       </Node>
       <Canvas Id="NDHkuPmu39dNoRKDA3itZb" Name="Math" Position="40,120">
