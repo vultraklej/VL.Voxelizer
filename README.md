@@ -13,7 +13,7 @@ A **vvvv gamma** implementation of the mesh voxelization GPU algorithm originall
 - Supports `TexCoords` and `Volume` sampling (as in the original implementation)
 
 ## Tested On
-- VVVV Gamma: `7.0-0416`
+- VVVV Gamma: `7.0-win`
 - VL.Fuse: `1.0.3-beta06`
 
 ## Current Status
