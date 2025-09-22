@@ -1,0 +1,114 @@
+[Summary("")]
+shader VoxelMosaic_ComputeFX : ComputeShaderBase, VoxelStruct
+{
+    int NumStates = 4;
+    int3 Size;
+    float4 Units; // Units[0] = level 0, Units[1] = level 1, Units[2] = level 2
+    int Level = 0;
+
+    StructuredBuffer<VoxelPos3> Voxels;
+    StructuredBuffer<VoxelPos3> VoxelsLevel1;
+    StructuredBuffer<VoxelPos3> VoxelsLevel2;
+    StructuredBuffer<VoxelPos3> VoxelsLevel3;
+    RWStructuredBuffer<VoxelMosaicData> Particles;
+
+    struct VoxelMosaicData
+    {
+        float3 Position;
+        float Size;
+        float SubdivState;
+    };
+
+    int3 GetPosition(uint index)
+    {
+        uint3 position;
+
+        uint wh = Size.x * Size.y;
+        int rem = index % wh;
+        position.z = index / wh;
+        position.y = rem / Size.x;
+        position.x = rem % Size.x;
+
+        return position;
+    }
+
+    uint GetIndex(uint3 position, uint width, uint height, uint depth)
+    {
+        return position.x + position.y * width + position.z * (width * height);
+    }
+
+    bool DownSample(uint id, uint level, out uint index)
+    {
+        uint3 p = GetPosition(id);
+        uint w = Size.x >> level;
+        uint h = Size.y >> level;
+        uint d = Size.z >> level;
+        uint x = p.x >> level;
+        uint y = p.y >> level;
+        uint z = p.z >> level;
+
+        index = GetIndex(uint3(x, y, z), w, h, d);
+
+        uint div = uint(pow(2, level));
+        uint rx = p.x % div;
+        uint ry = p.y % div;
+        uint rz = p.z % div;
+
+        return (rx == 0 && ry == 0 && rz == 0) && (x < w && y < h && z < d);
+    }
+
+    VoxelMosaicData GetMosaicParticle(uint index, uint level)
+    {
+        VoxelPos3 voxel = Voxels[index];
+        VoxelMosaicData particle = Particles[index];
+        float unitSize = Units.x;
+
+        uint vindex = 0;
+        if (!DownSample(index, level, vindex))
+        {
+            particle.Size = 0.0;
+            particle.Position = voxel.Position;
+            return particle;
+        }
+
+        // Select appropriate voxel buffer based on level
+        switch (level)
+        {
+            case 1:
+                voxel = VoxelsLevel1[vindex];
+                unitSize = Units.y;
+                break;
+            case 2:
+                voxel = VoxelsLevel2[vindex];
+                unitSize = Units.z;
+                break;
+            case 3:
+                voxel = VoxelsLevel3[vindex];
+                unitSize = Units.w;
+                break;
+        }
+
+        float3 position = voxel.Position;
+        float size = voxel.Fill > 0 ? unitSize * 0.5 : 0.0;
+
+        particle.Position = position;
+        particle.Size = size;
+
+        return particle;
+    }
+
+    override void Compute() 
+    {
+        uint index = streams.DispatchThreadId.x;
+
+        float subdivState = Particles[index].SubdivState;
+        uint level = (uint)floor(subdivState * ((float)NumStates - 1.0));
+        level = min(level, NumStates - 1);
+        // level = Level;
+
+        VoxelMosaicData p1 = GetMosaicParticle(index, level);
+        // p1.Position = Voxel
+
+        Particles[index] = p1;
+    }
+};

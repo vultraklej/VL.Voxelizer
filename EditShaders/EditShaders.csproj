@@ -13,6 +13,10 @@
     </None>
     <Compile Include="..\shaders\**\*.sdsl.cs" Link="shaders\%(RecursiveDir)%(Filename)%(Extension)">
     </Compile>
+    <None Include="..\help\shaders\**\*.sdsl" Link="shaders\%(RecursiveDir)%(Filename)%(Extension)">
+    </None>
+    <Compile Include="..\help\shaders\**\*.sdsl.cs" Link="shaders\%(RecursiveDir)%(Filename)%(Extension)">
+    </Compile>
   </ItemGroup>
   
 </Project>

@@ -28,6 +28,6 @@ This project is currently under sporadic development and is not yet available as
 
 - [ ] Add support for vertex color sampling
 - [ ] Merge shader into one using conditional compilation/effect permutation🤔
-- [ ] Add more examples
+- [x] Add more examples
 - [x] Execute `IRenderer` operations as part of the `ComputeStage`
 - [ ] Replace SDSL implementation with pure `ComputeSystem`🗻
