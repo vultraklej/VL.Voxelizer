@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - name: Git Checkout
-      uses: actions/checkout@manual
+      uses: actions/checkout@main
 
     - name: Setup Nuget.exe
       uses: nuget/setup-nuget@v1
