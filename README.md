@@ -25,6 +25,8 @@ nuget install VL.Fuse
 
 Then press <kbd>Enter</kbd> and wait for the end of the installation process. 
 
+## Current Status
+
 ### Known Issues
 
 - `TexCoords` sampling may produce jittered results between frames depending on the source model data
