@@ -4,6 +4,7 @@
     <id>VL.Voxelizer</id>
     <version>0.1.0</version>
     <authors>vultraklej</authors>
+    <license type="expression">MIT</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectUrl>https://github.com/vultraklej/VL.Voxelizer</projectUrl>
     <description>A vvvv gamma implementation of the mesh voxelization GPU algorithm</description>
@@ -13,7 +14,6 @@
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**\*.vl" target="\help" exclude="" />
     <file src="..\shaders\*.sdsl" target="\shaders" exclude="" />
-    <file src="..\help\shaders\*.sdsl" target="\help" exclude="" />
     <file src="..\assets\**\*.*" target="\assets" exclude="" />
   </files>
 </package>
