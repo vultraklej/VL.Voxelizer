@@ -20,7 +20,7 @@ A **vvvv gamma** implementation of the mesh voxelization GPU algorithm originall
 To install the current stable version, type
 
 ```
-nuget install VL.Fuse
+nuget install VL.Voxelizer
 ```
 
 Then press <kbd>Enter</kbd> and wait for the end of the installation process. 
