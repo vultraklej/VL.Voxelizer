@@ -16,9 +16,16 @@ A **vvvv gamma** implementation of the mesh voxelization GPU algorithm originall
 - VVVV Gamma: `7.0-win`
 - VL.Fuse: `1.0.3-beta06`
 
-## Current Status
+## Installing
+To install the current stable version, type
 
-This project is currently under sporadic development and is not yet available as a packaged release. But that shouldn't stop you from experimenting with this algorithm🧪.
+```
+nuget install VL.Voxelizer
+```
+
+Then press <kbd>Enter</kbd> and wait for the end of the installation process. 
+
+## Current Status
 
 ### Known Issues
 
